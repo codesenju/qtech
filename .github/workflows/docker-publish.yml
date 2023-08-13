@@ -8,7 +8,7 @@ on:
 env:
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
   DOCKER_HUB_ACCESS_TOKEN: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-  IMAGE_NAME: ${{ env.IMAGE_NAME }}
+  IMAGE_NAME: ${{ vars.IMAGE_NAME }}
 
 jobs:
   build-and-push:
