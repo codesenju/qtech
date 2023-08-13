@@ -29,5 +29,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
-            ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            ${{ github.run_number }}
+            latest
